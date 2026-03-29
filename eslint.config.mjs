@@ -1,0 +1,15 @@
+import { FlatCompat } from "@eslint/eslintrc";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+
+const currentDir = dirname(fileURLToPath(import.meta.url));
+const compat = new FlatCompat({ baseDirectory: currentDir });
+
+const config = [
+  {
+    ignores: [".next/**", "node_modules/**"]
+  },
+  ...compat.extends("next/core-web-vitals")
+];
+
+export default config;
