@@ -23,29 +23,47 @@ export function BenefitsSection() {
                   <div className="pointer-events-none absolute -left-8 top-10 h-24 w-24 rounded-full bg-accent/20 blur-3xl sm:h-32 sm:w-32" />
                   <div className="pointer-events-none absolute -right-8 bottom-8 h-28 w-28 rounded-full bg-violetAccent/20 blur-3xl sm:h-36 sm:w-36" />
 
-                  <div className="relative aspect-[5/6] min-h-[360px] sm:min-h-[460px]">
-                    <Image
-                      alt={portraitVisual.alt}
-                      className="object-cover object-[center_18%]"
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 32vw"
-                      src={portraitVisual.src}
-                    />
-                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,8,18,0.02),rgba(3,8,18,0.22)_58%,rgba(3,8,18,0.74)_100%)]" />
-                    <div className="absolute inset-0 border border-white/8" />
-
-                    <div className="absolute left-4 right-4 top-4 flex flex-wrap items-start justify-between gap-3 sm:left-5 sm:right-5 sm:top-5">
-                      <div className="rounded-full border border-white/10 bg-[rgba(7,17,31,0.72)] px-4 py-2 text-[0.68rem] uppercase tracking-[0.26em] text-accent backdrop-blur">
+                  <div className="flex flex-col gap-4 p-4 sm:p-0">
+                    <div className="flex flex-col gap-3 sm:hidden">
+                      <div className="rounded-full border border-white/10 bg-[rgba(7,17,31,0.72)] px-4 py-2 text-center text-[0.68rem] uppercase tracking-[0.26em] text-accent backdrop-blur">
                         {brand.name}
                       </div>
-                      <div className="rounded-full border border-white/10 bg-white/[0.07] px-4 py-2 text-[0.68rem] uppercase tracking-[0.24em] text-text/88 backdrop-blur">
+                      <div className="rounded-full border border-white/10 bg-white/[0.07] px-4 py-2 text-center text-[0.68rem] uppercase tracking-[0.24em] text-text/88 backdrop-blur">
                         web designer
                       </div>
                     </div>
 
-                    <div className="absolute inset-x-4 bottom-4 rounded-[1.45rem] border border-white/10 bg-[linear-gradient(180deg,rgba(7,17,31,0.86),rgba(7,17,31,0.72))] px-4 py-4 shadow-[0_18px_48px_rgba(3,10,20,0.4)] backdrop-blur-md sm:inset-x-5 sm:bottom-5 sm:px-5">
+                    <div className="relative aspect-[5/6] min-h-[360px] overflow-hidden rounded-[1.45rem] sm:min-h-[460px] sm:rounded-none">
+                      <Image
+                        alt={portraitVisual.alt}
+                        className="object-cover object-[center_18%]"
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 32vw"
+                        src={portraitVisual.src}
+                      />
+                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,8,18,0.02),rgba(3,8,18,0.22)_58%,rgba(3,8,18,0.74)_100%)]" />
+                      <div className="absolute inset-0 border border-white/8" />
+
+                      <div className="absolute left-5 right-5 top-5 hidden items-start justify-between gap-3 sm:flex">
+                        <div className="rounded-full border border-white/10 bg-[rgba(7,17,31,0.72)] px-4 py-2 text-[0.68rem] uppercase tracking-[0.26em] text-accent backdrop-blur">
+                          {brand.name}
+                        </div>
+                        <div className="rounded-full border border-white/10 bg-white/[0.07] px-4 py-2 text-[0.68rem] uppercase tracking-[0.24em] text-text/88 backdrop-blur">
+                          web designer
+                        </div>
+                      </div>
+
+                      <div className="absolute inset-x-5 bottom-5 hidden rounded-[1.45rem] border border-white/10 bg-[linear-gradient(180deg,rgba(7,17,31,0.86),rgba(7,17,31,0.72))] px-5 py-4 shadow-[0_18px_48px_rgba(3,10,20,0.4)] backdrop-blur-md sm:block">
+                        <p className="text-xs uppercase tracking-[0.28em] text-violetAccent">{brand.owner}</p>
+                        <p className="mt-2 text-sm leading-7 text-slate-100/88 sm:text-[0.96rem]">
+                          Bezpośrednia współpraca od pierwszej rozmowy po gotowe wdrożenie i publikację strony.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="rounded-[1.45rem] border border-white/10 bg-[linear-gradient(180deg,rgba(7,17,31,0.86),rgba(7,17,31,0.72))] px-4 py-4 shadow-[0_18px_48px_rgba(3,10,20,0.26)] backdrop-blur-md sm:hidden">
                       <p className="text-xs uppercase tracking-[0.28em] text-violetAccent">{brand.owner}</p>
-                      <p className="mt-2 text-sm leading-7 text-slate-100/88 sm:text-[0.96rem]">
+                      <p className="mt-2 text-sm leading-7 text-slate-100/88">
                         Bezpośrednia współpraca od pierwszej rozmowy po gotowe wdrożenie i publikację strony.
                       </p>
                     </div>
