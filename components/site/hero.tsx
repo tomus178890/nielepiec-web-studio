@@ -30,7 +30,7 @@ export function HeroSection() {
         <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(390px,0.94fr)] lg:gap-14">
           <div className="relative">
             <Reveal>
-              <div className="inline-flex max-w-full items-center gap-3 rounded-[1.45rem] border border-white/10 bg-white/[0.06] px-3 py-3 shadow-halo backdrop-blur-md sm:px-4">
+              <div className="flex max-w-full items-center gap-3 rounded-[1.45rem] border border-white/10 bg-white/[0.06] px-3 py-3 shadow-halo backdrop-blur-md sm:px-4">
                 <span className="relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-[1rem] border border-white/[0.12] bg-[linear-gradient(180deg,rgba(255,255,255,0.1),rgba(255,255,255,0.03))] p-0.5">
                   <Image
                     alt="Logo Nielepiec Web Studio"
@@ -43,7 +43,7 @@ export function HeroSection() {
                   />
                 </span>
                 <div className="min-w-0">
-                  <p className="truncate font-heading text-sm font-semibold tracking-[-0.03em] text-text sm:text-base">
+                  <p className="text-pretty font-heading text-sm font-semibold leading-tight tracking-[-0.03em] text-text sm:text-base">
                     {brand.name}
                   </p>
                   <p className="mt-1 text-[0.66rem] uppercase tracking-[0.28em] text-muted/[0.85] sm:text-[0.68rem]">
@@ -71,7 +71,7 @@ export function HeroSection() {
             </Stagger>
 
             <Reveal delay={0.14}>
-              <h1 className="mt-8 max-w-[11ch] text-balance font-heading text-[3.15rem] font-bold leading-[0.93] text-text sm:text-[4.5rem] lg:text-[5.7rem]">
+              <h1 className="mt-8 max-w-[11ch] text-balance font-heading text-[2.8rem] font-bold leading-[0.95] text-text sm:text-[4.5rem] lg:text-[5.7rem]">
                 {heroLead}
                 <span className="accent-line mt-4 block bg-[linear-gradient(135deg,#84f3ff_0%,#58d2ff_38%,#8b63ff_100%)] bg-clip-text text-transparent">
                   {accentCopy}

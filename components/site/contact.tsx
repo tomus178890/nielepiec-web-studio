@@ -60,25 +60,27 @@ export function ContactSection() {
                       {contactCards.map((card, index) => (
                         <a
                           key={card.label}
-                          className="flex items-center justify-between gap-4 rounded-[1.45rem] border border-white/10 bg-[rgba(7,17,31,0.7)] px-4 py-4 transition hover:border-accent/30 hover:bg-[rgba(7,17,31,0.84)]"
+                          className="flex items-start justify-between gap-4 rounded-[1.45rem] border border-white/10 bg-[rgba(7,17,31,0.7)] px-4 py-4 transition hover:border-accent/30 hover:bg-[rgba(7,17,31,0.84)] sm:items-center"
                           href={card.href}
                         >
-                          <div className="flex items-center gap-3">
+                          <div className="flex min-w-0 items-center gap-3">
                             <span className="glow-soft flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/10 text-accent">
                               <Icon className="h-5 w-5" name={card.icon} />
                             </span>
-                            <div>
+                            <div className="min-w-0">
                               <p className="text-xs uppercase tracking-[0.24em] text-muted">{card.label}</p>
                               <p
                                 className={`mt-1 font-semibold text-text ${
-                                  index === 0 ? "font-heading text-[1.3rem] sm:text-[1.55rem]" : "text-base sm:text-[1.05rem]"
+                                  index === 0
+                                    ? "font-heading text-[1.3rem] leading-tight [overflow-wrap:anywhere] sm:text-[1.55rem]"
+                                    : "text-base leading-7 [overflow-wrap:anywhere] sm:text-[1.05rem]"
                                 }`}
                               >
                                 {card.value}
                               </p>
                             </div>
                           </div>
-                          <Icon className="h-4 w-4 text-accent" name="arrow" />
+                          <Icon className="h-4 w-4 shrink-0 text-accent" name="arrow" />
                         </a>
                       ))}
                     </div>

@@ -36,7 +36,7 @@ export function PortfolioSection() {
                     <div className="absolute inset-0 bg-[linear-gradient(128deg,rgba(6,16,29,0.22),rgba(6,16,29,0.02)_36%,rgba(11,16,38,0.52)_100%)]" />
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(88,210,255,0.24),transparent_24%),radial-gradient(circle_at_18%_20%,rgba(132,93,255,0.18),transparent_20%),radial-gradient(circle_at_bottom_left,rgba(255,191,116,0.12),transparent_20%)] opacity-95 transition duration-500 group-hover:opacity-100" />
 
-                    <div className="absolute inset-x-5 top-5 flex items-center justify-between gap-3 sm:inset-x-6 sm:top-6">
+                    <div className="absolute inset-x-5 top-5 flex flex-wrap items-start justify-between gap-3 sm:inset-x-6 sm:top-6">
                       <span className="rounded-full border border-accent/[0.15] bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-accent">
                         koncept 0{index + 1}
                       </span>
@@ -85,7 +85,7 @@ export function PortfolioSection() {
                         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,19,0.03),rgba(6,11,19,0.12)_28%,rgba(6,11,19,0.94)_100%)] transition duration-500 group-hover:bg-[linear-gradient(180deg,rgba(6,11,19,0.02),rgba(6,11,19,0.08)_24%,rgba(6,11,19,0.9)_100%)]" />
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(88,210,255,0.18),transparent_22%),radial-gradient(circle_at_12%_20%,rgba(132,93,255,0.14),transparent_20%),radial-gradient(circle_at_bottom_left,rgba(255,191,116,0.14),transparent_22%)] opacity-90 transition duration-500 group-hover:opacity-100" />
 
-                        <div className="absolute inset-x-5 top-5 flex items-center justify-between gap-3">
+                        <div className="absolute inset-x-5 top-5 flex flex-wrap items-start justify-between gap-3">
                           <span className="rounded-full border border-accent/[0.15] bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-accent">
                             koncept 0{index + 1}
                           </span>

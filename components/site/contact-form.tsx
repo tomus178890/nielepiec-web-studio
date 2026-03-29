@@ -108,7 +108,8 @@ export function ContactForm() {
             <Icon className="h-4 w-4" name="arrow" />
           </button>
           <p className="max-w-sm text-sm leading-6 text-slate-200/[0.72]">
-            Formularz otwiera e-mail gotowy do wysłania na adres {brand.email}.
+            Formularz otwiera e-mail gotowy do wysłania na adres{" "}
+            <span className="[overflow-wrap:anywhere]">{brand.email}</span>.
           </p>
         </div>
       </div>

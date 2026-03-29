@@ -12,19 +12,19 @@ export function Navbar() {
   return (
     <motion.header
       animate={{ opacity: 1, y: 0 }}
-      className="sticky top-0 z-50 px-4 pb-2 pt-4 sm:px-6"
+      className="sticky top-0 z-50 px-3 pb-2 pt-3 sm:px-6 sm:pt-4"
       initial={{ opacity: 0, y: -16 }}
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="section-shell">
-        <div className="glass-panel relative overflow-hidden rounded-[2rem] px-4 py-3.5 shadow-panel sm:px-5 sm:py-4">
+        <div className="glass-panel relative overflow-hidden rounded-[2rem] px-3.5 py-3.5 shadow-panel sm:px-5 sm:py-4">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(88,210,255,0.08),transparent_24%),radial-gradient(circle_at_top_right,rgba(132,93,255,0.1),transparent_28%)]" />
           <div className="absolute inset-x-7 top-0 h-px bg-gradient-to-r from-white/0 via-accent/70 to-white/0" />
 
-          <div className="relative flex items-center justify-between gap-4 sm:gap-5">
+          <div className="relative flex items-center justify-between gap-3 sm:gap-5">
             <a
               aria-label="Nielepiec Web Studio - wróć na górę strony"
-              className="group flex min-w-0 items-center gap-4 sm:gap-5"
+              className="group flex min-w-0 flex-1 items-center gap-3 sm:gap-5"
               href="#start"
             >
               <span className="relative isolate flex h-11 w-11 shrink-0 items-center justify-center sm:h-14 sm:w-14">
@@ -40,8 +40,8 @@ export function Navbar() {
                   width={1024}
                 />
               </span>
-              <span className="min-w-0 self-center">
-                <span className="block truncate font-heading text-[0.98rem] font-semibold leading-none tracking-[-0.035em] text-text sm:text-[1.16rem]">
+              <span className="min-w-0 self-center pr-1">
+                <span className="block text-pretty font-heading text-[0.92rem] font-semibold leading-[1.05] tracking-[-0.035em] text-text sm:text-[1.16rem]">
                   {brand.name}
                 </span>
                 <span className="mt-1.5 hidden text-[0.68rem] uppercase tracking-[0.3em] text-muted/[0.85] sm:block">
@@ -75,7 +75,7 @@ export function Navbar() {
             <button
               aria-expanded={open}
               aria-label={open ? "Zamknij menu" : "Otwórz menu"}
-              className="secondary-button p-3.5 lg:hidden"
+              className="secondary-button shrink-0 p-3.5 lg:hidden"
               onClick={() => setOpen((value) => !value)}
               type="button"
             >

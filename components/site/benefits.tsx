@@ -34,7 +34,7 @@ export function BenefitsSection() {
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,8,18,0.02),rgba(3,8,18,0.22)_58%,rgba(3,8,18,0.74)_100%)]" />
                     <div className="absolute inset-0 border border-white/8" />
 
-                    <div className="absolute left-4 right-4 top-4 flex items-start justify-between gap-3 sm:left-5 sm:right-5 sm:top-5">
+                    <div className="absolute left-4 right-4 top-4 flex flex-wrap items-start justify-between gap-3 sm:left-5 sm:right-5 sm:top-5">
                       <div className="rounded-full border border-white/10 bg-[rgba(7,17,31,0.72)] px-4 py-2 text-[0.68rem] uppercase tracking-[0.26em] text-accent backdrop-blur">
                         {brand.name}
                       </div>
